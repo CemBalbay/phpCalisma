@@ -1,58 +1,46 @@
 <?php
 //echo "cem";
 
-/*
-$a = "10";
+
+$a = 110;
 $b = "110";
-var_dump($a == $b);
-//echo $a==$b ? true : false;
-*/
+// var_dump($a == $b);
+//echo $a==$b;
 
-/*
-$yıl = 2021;
-$dogum_yıl = 2003;
-$yas = $yıl - $dogum_yıl;   
-echo $yas;
-*/
-
-
-/*
-function cıkar($yıl, $dogum_yıl) {
-
-   $yas = $yıl + $;
-
-   return $yas;
-
+function esitlikKontrol($ilkSayi, $ikinciSayi) {
+    return $ilkSayi == $ikinciSayi;
 }
 
-echo cıkar(5, 10);
-
-*/
+// var_dump(esitlikKontrol(10, 20));
 
 
+$yil = 2021;
+$dogumYil = 2003;
+$yas = $yil - $dogumYil;
+// echo $yas;die;
 
-/*
-function Ort(array $numbers) {
+
+function cikar($yil, $dogumYil) {
+   return $yil - $dogumYil;
+}
+
+// echo cikar(2021, 2003);
+
+function ort(array $numbers) {
     $sum = array_sum($numbers);//sum değerlerin toplamını hesaplar
     $count = count($numbers);//count eleman sayısını döndürür
-    return $sum/$count;
-
+    return $sum / $count;
 }
+
 $a = [50,100,80,4];
-echo Ort($a)
-*/
+// echo ort($a);
 
-
-
-
-/*
-function name($surname) {
-    echo "$surname balbay";
+function name($firstName, $surName) {
+    //echo $firstName . ' ' . $surName;
+    // echo "{$firstName} {$surName}";
+    echo ucfirst(strtolower($firstName)) . ' ' . ucfirst(strtolower($surName));
 }
 
-name("cem");
-*/
-
-
+name("cEm", "balbay");
 
 ?>
